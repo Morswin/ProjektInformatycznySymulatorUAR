@@ -20,7 +20,7 @@ void Symulacja::nastepna_klatka()
 {
     double nowe_w = m_wartosc_zadana.generuj(m_i);
     double nowe_z = m_zaklocenia.generuj(m_i);
-    double nowe_e = nowe_w - m_arx.get_poprz_y();
+    double nowe_e = nowe_w - m_arx.get_poprz_y(); //Wartość zadana
     double nowe_u = m_pid(nowe_e);
     double nowe_y = m_arx(nowe_u, nowe_z);
     KlatkaSymulacji nowa_klatka = KlatkaSymulacji(nowe_w,
