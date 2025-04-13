@@ -4,11 +4,11 @@
 class KlatkaSymulacji
 {
 private:
-    double m_w;
-    double m_z;
-    double m_e;
-    double m_u;
-    double m_y;
+    double m_w;//zadana
+    double m_z;//zakłócenia
+    double m_e;//wartość zadana (suma w+z)
+    double m_u;//wynik PID
+    double m_y;//wynik ARX
     double m_p;
     double m_i;
     double m_d;
