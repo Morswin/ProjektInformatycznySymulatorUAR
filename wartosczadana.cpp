@@ -43,7 +43,7 @@ double WartoscZadana::generuj(int i)
         // qInfo() << std::sin(i);
         if (m_t == 0.0)
             return 0.0; // Nie dzielimy przez 0
-        return m_a * std::sinl(fmod(i, m_t) / (m_t) * 2 * 3.14);
+        return m_a * std::sin(fmod(i, m_t) / (m_t) * 2 * 3.14);
         break;
     }
     case TypWartosciZadanej::SygnalProstokatny: {
